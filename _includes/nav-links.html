@@ -1,0 +1,12 @@
+<li><a href="/learn-enough/">Home</a></li>
+<li><a href="/learn-enough/gallery">Gallery</a></li>
+<li class="dropdown">
+  <a href="/learn-enough/blog" class="drop-trigger">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    {% for post in site.posts limit:5 %}
+      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</li>
+<li><a href="{{ site.baseurl }}{{ site.posts.first.url }}">Newest Post</a></li>

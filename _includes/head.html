@@ -1,0 +1,25 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% if page.title %}
+    <title>{{ page.title }} | Test Page</title>
+    <meta property="og:title" content="{{ page.title }}" />
+  {% else %}
+    <title>Test Page: Don't Panic</title>
+    <meta property="og:title" content="Test Page: Don't Panic" />
+  {% endif %}
+  {% if page.description %}
+    <meta property="og:description" content="{{ page.description }}" />
+  {% else %}
+    <meta property="og:description" content="This is a dangerous site." />
+  {% endif %}
+  <link rel="icon" href="/learn-enough/favicon.png">
+  <link rel="apple-touch-icon" href="/learn-enough/apple-touch-icon.png"> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100|Roboto:100&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="/learn-enough/fonts/fontawesome-free-5.10.2-web/css/all.css">
+  <link rel="stylesheet" href="/learn-enough/css/main.css">
+  
+  <script src="/learn-enough/js/gallery.js" defer></script>
+</head>
+
